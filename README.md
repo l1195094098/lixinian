@@ -1,4 +1,4 @@
-# lixinian
+# lixinian 学号：2018310750
 实验：字符串实验
 实验目的：
 掌握字符串String及其方法的使用
@@ -23,36 +23,4 @@
 
 注意： 输入的内容，利用main方法中的args数组传递
 思路：
-首先利用循环控制输入的文章格式，使其输出时候达到所要求的，之后利用indexOf查找一个字符或字符串的第一次出现，统计某个字或者某串字出现的次数。
-核心代码
-		StringBuffer u=new StringBuffer("汉皇重色思倾国御宇多年求不得杨家有女初长成养在深闺人未识天生丽质难自弃一朝选在君王侧回眸一笑百媚生六宫粉黛无颜色春寒赐浴华清池温泉水滑洗凝脂侍儿扶起娇无力始是新承恩泽时云鬓花颜金步摇芙蓉帐暖度春宵春宵苦短日高起从此君王不早朝承欢侍宴无闲暇春从春游夜专夜后宫佳丽三千人三千宠爱在一身金屋妆成娇侍夜玉楼宴罢醉和春姊妹弟兄皆列士可怜光采生门户遂令天下父母心不重生男重生女骊宫高处入青云仙乐风飘处处闻缓歌慢舞凝丝竹尽日君王看不足渔阳鼙鼓动地来惊破霓裳羽衣曲九重城阙烟尘生千乘万骑西南行 ");//创建字符串1
-		StringBuffer u1=new StringBuffer("霓");//创建字符串2
-    定义StringBuffer函数，输入文章并创建所查找的字符串的StringBuffer；
-    		for (int i = 7;i<u.length();i+=8) {
-	        u.insert(i, "，");
-	            }
-	       for (int a = 15;a<u.length();a+=15) {
-	        u.deleteCharAt(a);
-	            }
-	        for (int b = 15;b<u.length();b+=16) {
-	            u.insert(b, "。");
-	            }
-	        for (int c = 16;c<u.length();c+=17) {
-	            u.insert(c, "\n");
-	            }
-              循环结构，排列所输入文章的格式；
-              static int count(String s1,String s2)
-	{
-		int c=0;
-		int index=-1;
-		while((index=s1.indexOf(s2,index))>-1)//indexOf查找一个字符或字符串的第一次出现
-		{
-			index+=7;
-			c++;
 
-		}
-		return c;
-	}
-  查找并统计所要求字符的个数；
-实验感想：
-通过这次实验，对以前所学习的循环结构有了更加深入的了解，并且从博客上学会了利用indexOf查找一个字符或字符串的出现与统计。
